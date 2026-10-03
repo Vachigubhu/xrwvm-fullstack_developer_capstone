@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="/static/bootstrap.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+            <div class="container-fluid">
+              <h2 class="fw-bold" style="padding-right: 5%;">Dealerships</h2>
+
+              <button class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarText"
+                      aria-controls="navbarText"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link"
+                       style="font-size: larger;"
+                       href="/about">
+                      About Us
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active fw-bold"
+                       style="font-size: larger;"
+                       aria-current="page"
+                       href="/contact">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container py-5">
+
+            <div class="card shadow-sm border-0 overflow-hidden mx-auto" style="max-width: 1100px;">
+
+                <div class="row g-0">
+
+                    <div class="col-lg-5">
+                        <img src="/static/contact-us.png"
+                             class="img-fluid h-100 w-100"
+                             style="object-fit: cover; min-height: 520px;"
+                             alt="Contact Dealerships">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="card-body p-4 p-lg-5">
+
+                            <div class="mb-4">
+                                <h1 class="fw-bold mb-2">Contact Us</h1>
+
+                                <p class="text-muted">
+                                    Have a question about a dealership, vehicle, or
+                                    customer review? Our team is here to help.
+                                </p>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-sm-6 mb-3">
+                                    <h6 class="fw-bold">Email</h6>
+                                    <p class="text-muted mb-0">
+                                        support@dealerships.com
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <h6 class="fw-bold">Phone</h6>
+                                    <p class="text-muted mb-0">
+                                        +1 (800) 555-0147
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h6 class="fw-bold">Business Hours</h6>
+                                    <p class="text-muted mb-0">
+                                        Monday - Friday<br>
+                                        9:00 AM - 6:00 PM
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h6 class="fw-bold">Location</h6>
+                                    <p class="text-muted mb-0">
+                                        North America
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="mb-4">
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label fw-semibold">
+                                            Name
+                                        </label>
+
+                                        <input type="text"
+                                               class="form-control"
+                                               id="name"
+                                               placeholder="Enter your name">
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label fw-semibold">
+                                            Email
+                                        </label>
+
+                                        <input type="email"
+                                               class="form-control"
+                                               id="email"
+                                               placeholder="Enter your email">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label fw-semibold">
+                                        Message
+                                    </label>
+
+                                    <textarea class="form-control"
+                                              id="message"
+                                              rows="4"
+                                              placeholder="How can we help?"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary px-4">
+                                    Send Message
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="card shadow-sm border-0 overflow-hidden mt-5">
+                <div class="row g-0 align-items-center">
+
+                    <div class="col-md-7">
+                        <div class="p-4 p-lg-5">
+                            <h2 class="fw-bold mb-3">
+                                Looking for your next car?
+                            </h2>
+
+                            <p class="text-muted mb-0">
+                                Explore dealerships, discover available vehicles,
+                                and read customer reviews to help you make a more
+                                informed decision.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <img src="/static/cars.png"
+                             class="img-fluid w-100"
+                             style="height: 230px; object-fit: cover;"
+                             alt="Cars at Dealerships">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

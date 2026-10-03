@@ -1,68 +1,170 @@
 <html>
 <head>
   <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
+
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <h2 class="fw-bold" style="padding-right: 5%;">Dealerships</h2>
+
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active fw-bold"
+               style="font-size: larger;"
+               aria-current="page"
+               href="/about">
+              About Us
+            </a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            <a class="nav-link"
+               style="font-size: larger;"
+               href="/contact">
+              Contact Us
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
+
+  <div class="container py-5">
+
+    <div class="card shadow-sm border-0 mb-5">
+      <div class="card-body p-5">
+
+        <div class="banner text-center" name="about-header">
+          <!-- Insert header information here -->
+          <h1 class="fw-bold mb-3">About Us</h1>
+
+          <p class="lead text-muted mb-3">
+            Welcome to Dealerships, your trusted platform for discovering
+            dealerships, vehicles, and customer experiences across North America.
+          </p>
+
+          <p class="text-muted mb-0">
+            We bring dealership information, vehicle data, and customer reviews
+            together to help you make more informed decisions when purchasing
+            your next vehicle.
+          </p>
+        </div>
+
       </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+    </div>
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">What We Offer</h2>
+      <p class="text-muted">
+        Everything you need to research dealerships before making your decision.
+      </p>
+    </div>
+
+    <div class="row g-4 mb-5">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <h4 class="fw-bold">Find Dealerships</h4>
+            <p class="card-text text-muted">
+              Discover dealerships by location and explore the services
+              and vehicles available at each dealership.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <h4 class="fw-bold">Explore Vehicles</h4>
+            <p class="card-text text-muted">
+              Explore different car makes and models to find options
+              that match your needs and preferences.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <h4 class="fw-bold">Read Customer Reviews</h4>
+            <p class="card-text text-muted">
+              Learn from customer experiences and reviews before visiting
+              or purchasing from a dealership.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
 
-</html>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-5">
+      <div class="card-body p-5">
+        <h2 class="fw-bold mb-3">Our Mission</h2>
+        <p class="text-muted mb-0">
+          Our mission is to make the car-buying journey more transparent,
+          convenient, and informed. By combining dealership information,
+          vehicle details, customer reviews, and sentiment insights, we help
+          users better understand their options before making a decision.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Meet Our Team</h2>
+      <p class="text-muted">
+        The people helping improve the dealership experience.
+      </p>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin: auto; gap: 24px;">
+
+      <div class="card shadow-sm border-0" style="width: 33.33%;">
+        <img class="card-img-top"
+             src="/static/person.png"
+             alt="Operations Manager">
+
+        <div class="card-body text-center">
+          <p class="title fw-bold fs-4 mb-1">Michael Carter</p>
+          <p class="text-primary fw-semibold">Operations Manager</p>
+
+          <p class="card-text text-muted">
+            Coordinates dealership partnerships and ensures customers
+            have access to accurate dealership information.
+          </p>
+
+          <p>michael.carter@dealerships.com</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-0" style="width: 33.33%;">
+        <img class="card-img-top"
+             src="/static/person.png"
+             alt="Customer Experience Specialist">
+
+        <div class="card-body text-center">
+          <p class="title fw-bold fs-4 mb-1">Sarah Williams</p>
+          <p class="text-primary fw-semibold">Customer Experience Specialist</p>
+
+          <p class="card-text text-muted">
+            Focuses on customer feedback and helps impr
