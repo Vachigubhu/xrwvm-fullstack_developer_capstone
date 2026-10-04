@@ -10,7 +10,10 @@ def initiate():
             "founded_year": 1933,
             "headquarters": "Yokohama, Japan",
             "website": "https://www.nissan-global.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Nissan_2020_logo.svg",
+            "logo": (
+                "https://upload.wikimedia.org/wikipedia/commons/2/23/"
+                "Nissan_2020_logo.svg"
+            ),
             "is_active": True
         },
         {
@@ -20,7 +23,10 @@ def initiate():
             "founded_year": 1926,
             "headquarters": "Stuttgart, Germany",
             "website": "https://www.mercedes-benz.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg",
+            "logo": (
+                "https://upload.wikimedia.org/wikipedia/commons/9/90/"
+                "Mercedes-Logo.svg"
+            ),
             "is_active": True
         },
         {
@@ -30,7 +36,10 @@ def initiate():
             "founded_year": 1909,
             "headquarters": "Ingolstadt, Germany",
             "website": "https://www.audi.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Audi_Logo.svg",
+            "logo": (
+                "https://upload.wikimedia.org/wikipedia/commons/9/92/"
+                "Audi_Logo.svg"
+            ),
             "is_active": True
         },
         {
@@ -40,7 +49,10 @@ def initiate():
             "founded_year": 1944,
             "headquarters": "Seoul, South Korea",
             "website": "https://www.kia.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/47/KIA_logo2.svg",
+            "logo": (
+                "https://upload.wikimedia.org/wikipedia/commons/4/47/"
+                "KIA_logo2.svg"
+            ),
             "is_active": True
         },
         {
@@ -50,7 +62,10 @@ def initiate():
             "founded_year": 1937,
             "headquarters": "Toyota City, Japan",
             "website": "https://global.toyota/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.svg",
+            "logo": (
+                "https://upload.wikimedia.org/wikipedia/commons/9/9d/"
+                "Toyota_carlogo.svg"
+            ),
             "is_active": True
         },
     ]
@@ -85,7 +100,9 @@ def initiate():
             "type": "SUV",
             "year": 2023,
             "dealer_id": 1,
-            "description": "A compact Nissan SUV designed for everyday driving.",
+            "description": (
+                "A compact Nissan SUV designed for everyday driving."
+            ),
             "car_make": car_make_instances[0]
         },
         {
@@ -101,7 +118,9 @@ def initiate():
             "type": "HATCHBACK",
             "year": 2023,
             "dealer_id": 2,
-            "description": "A compact Mercedes-Benz model with modern technology.",
+            "description": (
+                "A compact Mercedes-Benz model with modern technology."
+            ),
             "car_make": car_make_instances[1]
         },
         {
@@ -157,7 +176,9 @@ def initiate():
             "type": "VAN",
             "year": 2023,
             "dealer_id": 4,
-            "description": "A practical Kia vehicle designed for larger families.",
+            "description": (
+                "A practical Kia vehicle designed for larger families."
+            ),
             "car_make": car_make_instances[3]
         },
         {

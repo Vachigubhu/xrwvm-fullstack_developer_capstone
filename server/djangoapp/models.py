@@ -1,7 +1,6 @@
 # Uncomment the following imports before adding the Model code
 
 from django.db import models
-from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
@@ -15,7 +14,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class CarMake(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    country =  models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
     founded_year = models.PositiveIntegerField(null=True, blank=True)
     headquarters = models.CharField(max_length=150, blank=True)
     website = models.URLField(blank=True)
@@ -23,7 +22,7 @@ class CarMake(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.name # return the name as the string representation
+        return self.name  # return the name as the string representation
 
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
@@ -36,7 +35,9 @@ class CarMake(models.Model):
 # - Any other fields you would like to include in car model
 # - __str__ method to print a car make object
 class CarModel(models.Model):
-    car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE, related_name='car_models')
+    car_make = models.ForeignKey(
+        CarMake, on_delete=models.CASCADE, related_name='car_models'
+    )
     dealer_id = models.IntegerField()
     name = models.CharField(max_length=100)
 
@@ -53,11 +54,13 @@ class CarModel(models.Model):
 
     type = models.CharField(max_length=20, choices=TYPE_CHOICES)
 
-    year =  models.IntegerField(default=2026, 
-    validators= [
-        MaxValueValidator(2026),
-        MinValueValidator(2010)
-    ])
+    year = models.IntegerField(
+        default=2026,
+        validators=[
+            MaxValueValidator(2026),
+            MinValueValidator(2010)
+        ]
+    )
 
     description = models.TextField(blank=True)
 
