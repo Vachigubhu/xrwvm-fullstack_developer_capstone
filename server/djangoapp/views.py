@@ -123,7 +123,6 @@ def  get_dealer_details(request, dealer_id):
 def add_review(request):
     if (request.user.is_anonymous == False):
         data  = json.loads(request.body)
-        response = post_review(data)
         try:
             response = post_review(data)
             return JsonResponse({"status": 200})
