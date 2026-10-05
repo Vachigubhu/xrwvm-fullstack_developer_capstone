@@ -81,13 +81,17 @@ def registration(request):
 # def get_dealerships(request):
 # ...
 def get_dealerships(request, state="All"):
+
     if state == "All":
         endpoint = "/fetchDealers"
     else:
         endpoint = "/fetchDealers/" + state
-    dealerships = get_request(endpoint)
-    return JsonResponse({"status": 200, "dealers": dealerships})
 
+    dealerships = get_request(endpoint)
+
+    print(endpoint)
+
+    return JsonResponse({"status": 200, "dealers": dealerships})
 
 # Create a `get_dealer_reviews` view to render the reviews of a dealer
 # def get_dealer_reviews(request,dealer_id):
