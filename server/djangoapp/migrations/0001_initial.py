@@ -16,11 +16,25 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CarMake',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=100)),
                 ('description', models.TextField()),
                 ('country', models.CharField(max_length=100)),
-                ('founded_year', models.PositiveIntegerField(blank=True, null=True)),
+                (
+                    'founded_year',
+                    models.PositiveIntegerField(
+                        blank=True,
+                        null=True,
+                    ),
+                ),
                 ('headquarters', models.CharField(blank=True, max_length=150)),
                 ('website', models.URLField(blank=True)),
                 ('logo', models.URLField(blank=True)),
@@ -30,13 +44,52 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CarModel',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('dealer_id', models.IntegerField()),
                 ('name', models.CharField(max_length=100)),
-                ('type', models.CharField(choices=[('SEDAN', 'Sedan'), ('SUV', 'SUV'), ('WAGON', 'Wagon'), ('COUPE', 'Coupe'), ('HATCHBACK', 'Hatchback'), ('CONVERTIBLE', 'Convertible'), ('TRUCK', 'Truck'), ('VAN', 'Van')], max_length=20)),
-                ('year', models.IntegerField(default=2026, validators=[django.core.validators.MaxValueValidator(2026), django.core.validators.MinValueValidator(2010)])),
+                (
+                    'type',
+                    models.CharField(
+                        choices=[
+                            ('SEDAN', 'Sedan'),
+                            ('SUV', 'SUV'),
+                            ('WAGON', 'Wagon'),
+                            ('COUPE', 'Coupe'),
+                            ('HATCHBACK', 'Hatchback'),
+                            ('CONVERTIBLE', 'Convertible'),
+                            ('TRUCK', 'Truck'),
+                            ('VAN', 'Van'),
+                        ],
+                        max_length=20,
+                    ),
+                ),
+                (
+                    'year',
+                    models.IntegerField(
+                        default=2026,
+                        validators=[
+                            django.core.validators.MaxValueValidator(2026),
+                            django.core.validators.MinValueValidator(2010),
+                        ],
+                    ),
+                ),
                 ('description', models.TextField(blank=True)),
-                ('car_make', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='car_models', to='djangoapp.carmake')),
+                (
+                    'car_make',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name='car_models',
+                        to='djangoapp.carmake',
+                    ),
+                ),
             ],
         ),
     ]
