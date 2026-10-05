@@ -1,5 +1,11 @@
 # Full Stack Developer Capstone
 
+Dealership Web Application
+
+Repository Name: fullstack_developer_capstone
+
+Project Name: Dealership Web Application
+
 A full-stack dealership web application developed as the capstone project for the **IBM Full Stack Developer Professional Certificate**.
 
 The project demonstrates the complete development lifecycle of a modern web application, including frontend development, backend APIs, database integration, authentication, containerization, deployment, and AI-powered sentiment analysis.
